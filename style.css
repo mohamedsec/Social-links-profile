@@ -31,7 +31,7 @@ body {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 32px;
   padding: 42px;
 }
 .usr {
@@ -61,7 +61,7 @@ h2 {
 .links {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
 }
 p {
   font-size: 14px;
@@ -75,11 +75,11 @@ p {
 }
 .link-item {
   background-color: var(--Grey7);
-  font-size: 16px;
+  font-size: 14px;
   text-transform: capitalize;
   text-align: center;
   padding: 10px 0;
-  border-radius: 6px;
+  border-radius: 8px;
   transition: all 0.2s ease-in;
   cursor: pointer;
   font-weight: 700;
