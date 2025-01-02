@@ -1,0 +1,98 @@
+@font-face {
+  font-family: inter;
+  src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey7: hsl(0, 0%, 20%);
+  --Grey8: hsl(0, 0%, 12%);
+  --Grey9: hsl(0, 0%, 8%);
+}
+body {
+  font-family: inter;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: var(--Grey9);
+  color: var(--White);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  background-color: var(--Grey8);
+  width: 384px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+}
+.usr {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.usrTxt {
+  text-align: center;
+}
+h1 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: 900;
+}
+h2 {
+  font-size: 14px;
+  color: var(--Green);
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+p {
+  font-size: 9px;
+  font-weight: 400;
+}
+.links-lists {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.link-item {
+  background-color: var(--Grey7);
+  font-size: 12px;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 4px;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+  font-weight: 700;
+}
+.link-item:active,
+.link-item:hover {
+  background-color: var(--Green);
+  color: var(--Grey9);
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 320px;
+    max-width: 90%;
+  }
+}
